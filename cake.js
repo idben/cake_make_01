@@ -2,9 +2,7 @@
 
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
-lib.ssMetadata = [
-		{name:"cake_atlas_1", frames: [[0,365,529,265],[0,0,820,363]]}
-];
+lib.ssMetadata = [];
 
 
 (lib.AnMovieClip = function(){
@@ -24,20 +22,6 @@ lib.ssMetadata = [
 	}
 }).prototype = p = new cjs.MovieClip();
 // symbols:
-
-
-
-(lib.CachedBmp_8 = function() {
-	this.initialize(ss["cake_atlas_1"]);
-	this.gotoAndStop(0);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.CachedBmp_7 = function() {
-	this.initialize(ss["cake_atlas_1"]);
-	this.gotoAndStop(1);
-}).prototype = p = new cjs.Sprite();
 
 
 
@@ -2632,17 +2616,15 @@ if (reversed == null) { reversed = false; }
 	this.shape.graphics.f().s("#FFFFFF").ss(7,1,1).p("AUHH0I0isIIzrMeAUHD/I0isIIzrMe");
 	this.shape.setTransform(7.025,52.225);
 
-	this.instance = new lib.CachedBmp_8();
-	this.instance.setTransform(-125.2,-20.75,0.5,0.5);
-
-	this.instance_1 = new lib.CachedBmp_7();
-	this.instance_1.setTransform(-200.7,-145,0.5,0.5);
-
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f().s("#FFFFFF").ss(7,1,1).p("AUHHUI0isJIzrMfAUHKmI0isJIzrMfAUHBOI0isJIzrMfAUHEHI0isJIzrMf");
-	this.shape_1.setTransform(7.025,36.7);
+	this.shape_1.graphics.f().s("#FFFFFF").ss(7,1,1).p("AUHGGI0isIIzrMeAUHJdI0isIIzrMeAUHCWI0isIIzrMe");
+	this.shape_1.setTransform(7.025,45.475);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape}]}).to({state:[{t:this.instance_1},{t:this.instance}]},1).to({state:[{t:this.shape_1}]},1).wait(1));
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f().s("#FFFFFF").ss(7,1,1).p("AUHHUI0isJIzrMfAUHKmI0isJIzrMfAUHBOI0isJIzrMfAUHEHI0isJIzrMf");
+	this.shape_2.setTransform(7.025,36.7);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape}]}).to({state:[{t:this.shape_1}]},1).to({state:[{t:this.shape_2}]},1).wait(1));
 
 	// skin1
 	this.skin1_5_mc = new lib.skin_LG_3();
@@ -2660,11 +2642,11 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.skin1_3_mc},{t:this.skin1_4_mc},{t:this.skin1_5_mc}]}).wait(3));
 
 	// bottom
-	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f().s("#344257").ss(7,1,1).p("AzqONQpOjmialrQiZlqFnlIQFnlHK8iIQK8iHLEB7QLFB8F/FAQF+FCiAFsQh/Fuo+DwI0jsKg");
-	this.shape_2.setTransform(4.1966,40.843);
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.f().s("#344257").ss(7,1,1).p("AzqONQpOjmialrQiZlqFnlIQFnlHK8iIQK8iHLEB7QLFB8F/FAQF+FCiAFsQh/Fuo+DwI0jsKg");
+	this.shape_3.setTransform(4.1966,40.843);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape_2).wait(3));
+	this.timeline.addTween(cjs.Tween.get(this.shape_3).wait(3));
 
 	this._renderFirstFrame();
 
@@ -2894,9 +2876,7 @@ lib.properties = {
 	fps: 30,
 	color: "#FFFFFF",
 	opacity: 1.00,
-	manifest: [
-		{src:"images/cake_atlas_1.png?1713931089351", id:"cake_atlas_1"}
-	],
+	manifest: [],
 	preloads: []
 };
 
